@@ -1,4 +1,4 @@
-console.log("Hello dear");
+/*console.log("Hello dear");
 
 document.getElementById("h1").textContent = "nice";
 document.getElementById("p").textContent = "great";
@@ -39,4 +39,32 @@ let playerName;
 document.getElementById("btn").onclick = function(){
     playerName = document.getElementById("input").value;
     document.getElementById("h1").textContent = `Welcome ${playerName}`;
+}
+
+let x = 25;
+let y = "23";
+//type conversion
+x = String(x);
+y = Number(y);
+
+console.log(x, typeof x);
+console.log(y, typeof y);*/
+
+let count = 0;
+const increaseBtn = document.getElementById("increaseBtn");
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const label = document.getElementById("countLabel");
+
+increaseBtn.onclick = function(){
+count++;
+label.textContent = count;
+}
+decreaseBtn.onclick = function(){
+    count--;
+    label.textContent = count;
+}
+resetBtn.onclick = function(){
+    count = 0;
+    label.textContent = count;
 }
