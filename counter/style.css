@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(193, 85, 255);
+}
+#countLabel{
+display: block;
+text-align: center;
+font-size: 2em;
+font-family: Arial, Helvetica, sans-serif;
+}
+#myButtons{
+    text-align: center;
+}
+.buttons{
+    padding: 5px 5px;
+    font-size: 0.5em;
+    color: brown;
+    background-color: bisque;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.buttons:hover{
+    background-color: blueviolet;
+    color: aliceblue;
+}
