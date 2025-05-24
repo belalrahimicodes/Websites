@@ -56,6 +56,11 @@ app = app.slice(1, 6);
 console.log(app);
 
 let list = "cars apples wash go come";
-let shortList = list.slice(0, list.indexOf(" "));
+let shortList = list.slice(list.indexOf(" ") + 1);
 console.log(shortList);
 
+//method chaining
+let apps = window.prompt("Enter your app name: ");
+
+apps = apps.trim().charAt(0).toUpperCase() + apps.trim().slice(1).toLowerCase();
+console.log(apps);
