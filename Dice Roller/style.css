@@ -37,6 +37,13 @@ h1{
     background-color: rgb(112, 110, 110);
     color: white;
 }
+#button:hover{
+    background-color: rgb(255, 243, 11);
+    color: black;
+}
+#button:active{
+    background-color: rgb(255, 163, 14);
+}
 #diceNum{
     font-style: italic;
     color: rgb(255, 255, 255);
