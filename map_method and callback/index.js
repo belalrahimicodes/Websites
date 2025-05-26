@@ -150,3 +150,13 @@ console.log(developer.country);
 console.log(developer.app);
 console.log(developer.isWorking);
 developer.language();
+
+//THIS
+
+const cartoon = {
+    name: "Mr. Bean",
+    age:35,
+    //make sure to not use arrow function here; it doesnt work!
+    job: function(){console.log(`${this.name} is making people with the age of ${this.age} laugh.`)},
+}
+cartoon.job();
