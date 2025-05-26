@@ -79,4 +79,45 @@ class brands extends cars{
 const brand1 = new brands();
 brand1.models();
 
+//Super keyword
+
+class Library{
+    constructor(name, location){
+        this.name = name,
+        this.location = location
+    }
+    libraryFound(lib, status){
+        console.log(`The Library "${lib}" is ${status}.`);
+    }
+}
+class books extends Library{
+    constructor(name, location, year){
+        super(name, location);
+        this.year = year;
+    }
+    booksFound(){
+        console.log(`The book "${this.name}" is found in ${this.location} which is written in ${this.year}.`);
+        super.libraryFound("Zentral", "old");
+    }
+}
+class pens extends Library{
+    constructor(name, location, color){
+        super(name, location);
+        this.color = color;
+    }
+     pensFound(){
+        console.log(`The pen "${this.name}" is found in ${this.location} which is ${this.color}.`);
+        super.libraryFound("Wetzikon", "new");
+    }
+    
+}
+
+const book1 = new books("The Alchemist", "Oerlikon", 1988);
+book1.booksFound();
+
+const pen1 = new pens("Swiss", "Zürich", "blue");
+pen1.pensFound();
+
+
+
 
