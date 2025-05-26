@@ -160,3 +160,15 @@ const cartoon = {
     job: function(){console.log(`${this.name} is making people with the age of ${this.age} laugh.`)},
 }
 cartoon.job();
+
+//constructor
+
+function jobs(position, year, experience){
+    this.position = position,
+    this.year = year,
+    this.experience = function(){console.log(`This ${this.position} applied in ${this.year}`)}
+}
+const job1 = new jobs("IT", "2025", "one year");
+const job2 = new jobs("Doctor", "2025", "five years");
+
+job1.experience();
