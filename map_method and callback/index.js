@@ -1,5 +1,4 @@
 //Map method and Callback
-
 const cars = ["porsche", "lambo", "mclaren", "bugatti"];
 
 const uppercaseCars = cars.map(uppercase);
@@ -137,3 +136,17 @@ console.log(arrowEven);
 
 const arrowAdd = nums.reduce((accumulator, element) => accumulator + element);
 console.log(arrowAdd);
+
+//objects
+
+const developer = {
+    app: "js",
+    country: "Switzerland",
+    ver: 12,
+    isWorking: true,
+    language: () => console.log(`yeah he is speaking German too!`),
+}
+console.log(developer.country);
+console.log(developer.app);
+console.log(developer.isWorking);
+developer.language();
