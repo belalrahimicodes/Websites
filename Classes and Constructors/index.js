@@ -48,9 +48,35 @@ const user1 = new Users("Ronaldo");
 const user2 = new Users("Dembele");
 const user3 = new Users("Lamine Yamal");
 
-
 user1.displayUser();
 console.log(`User count is: ${Users.count}`);
 
+//inheritance
+
+class fruits{
+
+    colors(){
+        console.log(`The color of this fruit is: ${this.color}`);
+    }
+
+}
+class color extends fruits{
+    color = "green";
+}
+
+const color1 = new color();
+color1.colors();
+
+class cars{
+
+    models(){
+        console.log(`This ${this.name} is new.`);
+    }
+}
+class brands extends cars{
+    name = "Porsche";
+}
+const brand1 = new brands();
+brand1.models();
 
 
