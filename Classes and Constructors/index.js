@@ -28,5 +28,29 @@ product2.showProduct();
 const taxes = 0.02;
 product2.calTotslPrice(taxes);
 
+//Static
+
+class Users{
+
+    static count = 0;
+
+    constructor(name){
+        this.name = name,
+        Users.count++
+    }
+
+    displayUser(){
+        console.log(`User is: ${this.name}`);
+    }
+}
+
+const user1 = new Users("Ronaldo");
+const user2 = new Users("Dembele");
+const user3 = new Users("Lamine Yamal");
+
+
+user1.displayUser();
+console.log(`User count is: ${Users.count}`);
+
 
 
