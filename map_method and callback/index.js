@@ -115,3 +115,25 @@ const addNums = nums.reduce(function(accumulator, element){
     return accumulator + element;
 });
 console.log(`sum of nums: ${addNums}`);
+
+//arrow functions
+
+const hi = () => {
+    console.log(`hello dear!`);
+}
+hi();
+
+const welcome = (name, age) => {
+    console.log(`Hey ${name}`);
+    console.log(`you are ${age}`);
+}
+welcome("alex", 22);
+
+const arrowSquare = nums.map((element) => Math.pow(element, 2));
+console.log(arrowSquare);
+
+const arrowEven = nums.filter((element) => element % 2 === 0);
+console.log(arrowEven);
+
+const arrowAdd = nums.reduce((accumulator, element) => accumulator + element);
+console.log(arrowAdd);
