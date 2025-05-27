@@ -57,5 +57,25 @@ for(const property in customer.jobs){
     console.log(customer.jobs[property]);
 }
 
+//new example with classes
+
+class Student{
+    constructor(name, age, ...jobs){
+        this.name = name,
+        this.age = age,
+        this.jobs = new Jobs(...jobs);
+    }
+}
+class Jobs{
+    constructor(atSchool, atUni, now){
+        this.atSchool = atSchool,
+        this.atUni = atUni,
+        this.now = now
+    }
+}
+
+const student1 = new Student("Alex", 22, "unemployed", "assistant", "Engineer");
+console.log(student1.jobs.atSchool);
+
 
 
