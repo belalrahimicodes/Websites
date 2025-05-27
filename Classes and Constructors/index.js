@@ -118,6 +118,54 @@ book1.booksFound();
 const pen1 = new pens("Swiss", "Zürich", "blue");
 pen1.pensFound();
 
+//getters and setters
 
+class Customer{
+    constructor(name, lastName, age){
+        this.name = name,
+        this.lastName = lastName,
+        this.age = age
+    }
+    set name(newName){
+        if(typeof newName === "string" && newName.length > 0){
+            this._name = newName;
+        }
+        else{
+            console.error(`Your name gotta be a string!`);
+        }
+    }
+    set lastName(newLastName){
+        if(typeof newLastName === "string" && newLastName.length > 0){
+            this._lastName = newLastName;
+        }
+        else{
+            console.error(`Your last name gotta be a string!`);
+        }
+    }
+    set age(newAge){
+        if(typeof newAge === "number" && newAge > 0){
+            this._age = newAge;
+        }
+        else{
+            console.error(`Your age gotta be a number!`);
+        }
+    }
+    get name(){
+        return this._name;
+    }
+    get lastName(){
+        return this._lastName;
+    }
+    get age(){
+        return this._age;
+    }
+    get allCustomerInfo(){
+        return this._name + " " +  this._lastName + " " + this._age;
+    }
+}
 
-
+const customer1 = new Customer("Alex", "Machleidt", 22);
+console.log(`New customer name is: ${customer1.name}`);
+console.log(`New customer last name is: ${customer1.lastName}`);
+console.log(`New customer age is: ${customer1.age}`);
+console.log(`All info of new customer: ${customer1.allCustomerInfo}`);
