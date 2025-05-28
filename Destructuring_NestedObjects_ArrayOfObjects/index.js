@@ -77,5 +77,29 @@ class Jobs{
 const student1 = new Student("Alex", 22, "unemployed", "assistant", "Engineer");
 console.log(student1.jobs.atSchool);
 
+//Array of objects
 
+const schools = [{name: "Oerlikon", year: 2026, location: "Oerlikon Strasse"}, 
+                 {name: "Stadelhofen", year: 2023, location: "Stadelhofen Strasse"},
+                 {name: "Zurich", year: 2025, location: "Stadt Zurich"},
+                 {name: "Bern", year: 2024, location: "Stadt Bern"}];
 
+console.log(schools[0].location);
+console.log(schools[3].name);
+
+schools.pop();
+console.log(schools);
+
+schools.unshift({name: "Wetzikon", year: 2025, location: "Zurich"});
+console.log(schools);
+
+/*removes objects between two positions
+schools.splice(0, 1);*/
+
+schools.forEach(school => console.log(school.name));
+
+const schoolLocation = schools.map(school => school.location);
+console.log(schoolLocation);
+
+const oldSchools = schools.filter(school => school.year < 2026);
+console.log(oldSchools);
