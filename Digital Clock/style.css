@@ -1,0 +1,29 @@
+body{
+   margin: 0%;
+}
+#clockContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(110, 255, 255);
+}
+#clock{
+    font-size: 4.5rem;
+    border: 5px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 4px 4px;
+    background: linear-gradient(to right, rgb(255, 74, 231), white);
+}
+h1{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 5px 4px 4px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(209, 118, 255));
+    border-radius: 7px;
+}
