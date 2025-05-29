@@ -113,3 +113,20 @@ console.log(bankAccount.displayMoney());
 
 bankAccount.resetBalance();
 console.log(bankAccount.displayMoney());
+
+//setTimeout()
+
+let timer;
+
+function timeOut(){
+   timer = setTimeout(() => console.log("This messag is printed after 4 seconds."), 4000);
+   console.log("timeOut added!");
+}
+timeOut();
+
+function deleteTimeOut(){
+    clearTimeout(timer);
+    console.log("timeOut removed!");
+}
+/*the function above removes the time out
+deleteTimeOut();*/
