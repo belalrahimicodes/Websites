@@ -103,3 +103,15 @@ console.log(schoolLocation);
 
 const oldSchools = schools.filter(school => school.year < 2026);
 console.log(oldSchools);
+
+//Sort method
+
+const doctors = [{name: "Alex", age: 22, address: "Zurich"},
+                 {name: "John", age: 34, address: "Tokyo"},
+                 {name: "James", age: 45, address: "Basel"}];
+//numerical sort
+doctors.sort((a, b) => b.age - a.age);
+console.log(doctors);
+//alphabetical sort
+doctors.sort((a, b) => a.address.localeCompare(b.address));
+console.log(doctors);
