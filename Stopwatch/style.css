@@ -1,5 +1,7 @@
 body{
     margin: 0%;
+    background: linear-gradient(to right, rgb(137, 132, 132), white);
+
 }
 #stopwatch-container{
     font-family: Arial, Helvetica, sans-serif;
@@ -13,7 +15,7 @@ body{
 #content{
     text-shadow: 3px 4px 4px lightskyblue;
     font-weight: bold;
-    background: linear-gradient(to right, silver, white);
+    background: linear-gradient(to right, rgb(78, 110, 252), white);
 }
 #start-button{
     background-color: greenyellow;
@@ -39,4 +41,22 @@ body{
     color: white;
     font-size: 30px;
     cursor: pointer;
+}
+#start-button:hover{
+    background-color: rgb(83, 78, 78);
+}
+#stop-button:hover{
+    background-color: rgb(83, 78, 78);
+}
+#reset-button:hover{
+    background-color: rgb(83, 78, 78);
+}
+#start-button:active{
+    background-color: rgb(168, 199, 46);
+}
+#stop-button:active{
+    background-color: rgb(227, 225, 74);
+}
+#reset-button:active{
+    background-color: rgb(166, 232, 100);
 }
