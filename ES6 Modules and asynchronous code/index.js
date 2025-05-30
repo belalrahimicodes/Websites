@@ -12,3 +12,20 @@ console.log(divideNums);
 
 const multiplyNums = multiply(2,2);
 console.log(multiplyNums);
+
+//asynchronous code
+function task1(callback){
+    setTimeout(() => {
+        console.log("text 1");
+    callback()}, 2000);
+}
+
+function task2(){
+    console.log("text 2");
+    setTimeout(() =>{
+        console.log("text 3");
+    }, 3000);
+    console.log("text 4");
+}
+
+task1(task2);
