@@ -25,6 +25,9 @@ body{
 }
 #buttons{
     display: grid;
+    /*divide them in 4 columns and 1fr means that each column
+    should take out an even amount of space
+    */
     grid-template-columns: repeat(4, 1fr);
     padding: 15px;
 }
