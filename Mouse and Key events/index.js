@@ -22,3 +22,16 @@ button.addEventListener("mouseout", changeItem => {
     text.textContent = "Click the button below me ⬇️"; 
     text.style.color = "black";
 });
+
+//key events
+
+const key = document.getElementById("key");
+
+document.addEventListener("keydown", event => {
+    key.style.color = "red";
+    key.textContent = "magic";
+});
+document.addEventListener("keyup", event => {
+    key.style.color = "black";
+    key.textContent = "Press a key and see the magic!";
+});
