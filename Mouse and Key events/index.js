@@ -35,3 +35,21 @@ document.addEventListener("keyup", event => {
     key.style.color = "black";
     key.textContent = "Press a key and see the magic!";
 });
+
+//Hide and show HTML
+
+const hideButton = document.getElementById("hideButton");
+const img = document.getElementById("img");
+
+hideButton.addEventListener("click", event => {
+    /*if you want the position of the image to be reserved once hidden, 
+    you can use visibility option and make it either visible or hidden*/
+    if(img.style.display === "none"){
+        img.style.display = "inline";
+        hideButton.textContent = "Hide Image";
+    }
+    else{
+        img.style.display = "none";
+        hideButton.textContent = "Show Image";
+    }
+});
