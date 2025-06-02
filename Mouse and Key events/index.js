@@ -53,3 +53,43 @@ hideButton.addEventListener("click", event => {
         hideButton.textContent = "Show Image";
     }
 });
+
+//classList
+
+const clButton = document.getElementById("classList");
+
+//add a classList once clicked
+clButton.addEventListener("click", event =>{
+    event.target.classList.add("clickButton");
+});
+//toggle a classList once mouse is over the button
+hideButton.addEventListener("mouseover", event => {
+    event.target.classList.toggle("hover");
+});
+//toggle a classList once mouse is out of the button
+hideButton.addEventListener("mouseout", event => {
+    event.target.classList.toggle("out");
+});
+
+const replaceButton = document.getElementById("replaceButton");
+
+replaceButton.classList.add("out");
+//replace classList/s
+replaceButton.addEventListener("click", event =>{
+    event.target.classList.replace("out", "disable");
+    event.target.textContent = "Noice!";
+});
+
+const containsButton = document.getElementById("containsButton");
+
+containsButton.classList.add("newStyle");
+//replace classList if it already contains another classList
+containsButton.addEventListener("click", event =>{
+    if(event.target.classList.contains("disable")){
+        event.target.textContent = "magic";
+    }
+    else{
+        event.target.classList.replace("newStyle", "disable");
+        event.target.textContent = "good job, click again now!";
+    }
+});

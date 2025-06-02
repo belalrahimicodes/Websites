@@ -34,3 +34,37 @@ body{
 img{
     width: 200px;
 }
+.hover{
+    background-color: darkorange;
+    color: white;
+    box-shadow: 3px 3px black;
+}
+.out{
+    background-color: darkorange;
+    color: black;
+    box-shadow: none;
+}
+.clickButton{
+    background-color: darkorange;
+    color: white;
+    box-shadow: 3px 3px black;
+}
+#classList{
+    font-size: 1.5rem;
+}
+#replaceButton{
+    font-size: 1.5rem; 
+}
+#containsButton{
+    font-size: 1.5rem; 
+}
+.disable{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.newStyle{
+    color: black;
+    background-color: antiquewhite;
+}
